@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="shortcut icon"
+			type="image/jpg"
+			href="public/img/devchallenges.png"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" type="text/css" href="public/css/style.css" />
+		<title>Checkout Page Challenge</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 class="color-black">Checkout</h1>
+			</header>
+			<main class="main">
+				<form class="form">
+					<section class="section margin-y-lg">
+						<h2 class="color-grey-1">Contact information</h2>
+						<label
+							for="email"
+							class="d-in-block text-xs color-grey-2 margin-y-xs"
+							>E-mail</label
+						>
+						<div class="input__container">
+							<i class="material-icons icon p-absolute">email</i>
+							<input
+								class="input input--w-icon text-md margin-bottom-md b-1 br-sm padding-sm"
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Enter your email..."
+								required
+							/>
+						</div>
+
+						<label
+							for="phone"
+							class="d-in-block text-xs color-grey-2 margin-y-xs"
+							>Phone</label
+						>
+						<div class="input__container">
+							<i class="material-icons icon p-absolute">phone</i>
+							<input
+								class="input input--w-icon text-md margin-bottom-md b-1 br-sm padding-sm"
+								type="tel"
+								name="phone"
+								id="phone"
+								placeholder="Enter your phone..."
+								required
+							/>
+						</div>
+					</section>
+					<section class="section margin-y-lg overflow-hidden">
+						<h2 class="color-grey-1">Shipping address</h2>
+						<label
+							for="fullname"
+							class="d-in-block text-xs color-grey-2 margin-y-xs"
+							>Full name</label
+						>
+						<div class="input__container">
+							<i class="material-icons icon p-absolute"
+								>account_circle</i
+							>
+							<input
+								class="input input--w-icon text-md margin-bottom-md b-1 br-sm padding-sm"
+								type="text"
+								name="fullname"
+								id="fullname"
+								placeholder="Your fullname.."
+								required
+							/>
+						</div>
+
+						<label
+							for="address"
+							class="d-in-block text-xs color-grey-2 margin-y-xs"
+							>Address</label
+						>
+						<div class="input__container">
+							<i class="material-icons icon p-absolute">home</i>
+							<input
+								class="input input--w-icon text-md margin-bottom-md b-1 br-sm padding-sm"
+								type="text"
+								name="address"
+								id="address"
+								placeholder="Your address.."
+								required
+							/>
+						</div>
+
+						<label
+							for="city"
+							class="d-in-block text-xs color-grey-2 margin-y-xs"
+							>City</label
+						>
+						<div class="input__container">
+							<i class="material-icons icon p-absolute"
+								>location_city</i
+							>
+							<input
+								class="input input--w-icon text-md margin-bottom-md b-1 br-sm padding-sm"
+								type="text"
+								name="city"
+								id="city"
+								placeholder="Your city.."
+								required
+							/>
+						</div>
+
+						<div class="d-flex d-justify-sb">
+							<div class="w-50 flex-grow-1 margin-right-md">
+								<label
+									for="country"
+									class="d-in-block text-xs color-grey-2 margin-y-xs"
+									>Country</label
+								>
+								<div class="input__container">
+									<i class="material-icons icon p-absolute"
+										>public</i
+									>
+									<i
+										class="material-icons icon icon--right p-absolute br-xs bg-color-grey-5 cursor-p"
+										>expand_more</i
+									>
+									<select
+										class="select input input--w-icon text-md color-grey-3 margin-bottom-md br-sm padding-sm"
+										name="country"
+										id="country"
+										required
+									>
+										<option
+											class="option padding-md"
+											value=""
+											disabled
+											selected
+											hidden
+										>
+											Your country..
+										</option>
+										<option
+											class="option padding-md"
+											value="vietnam"
+											>Vietnam</option
+										>
+										<option
+											class="option padding-md"
+											value="philippines"
+											>Philippines</option
+										>
+										<option
+											class="option padding-md"
+											value="malaysia"
+											>Malaysia</option
+										>
+									</select>
+								</div>
+							</div>
+
+							<div class="w-50 flex-grow-1">
+								<label
+									for="postal"
+									class="d-in-block text-xs color-grey-2 margin-y-xs"
+									>Postal code</label
+								>
+								<div class="input__container">
+									<i class="material-icons icon p-absolute"
+										>markunread_mailbox</i
+									>
+									<input
+										class="input input--w-icon text-md margin-bottom-md b-1 br-sm padding-sm"
+										type="text"
+										name="postal"
+										id="postal"
+										placeholder="Your postal code.."
+										required
+									/>
+								</div>
+							</div>
+						</div>
+						<label
+							class="d-flex d-align-i-center text-xs cursor-p color-grey-2 margin-y-xs"
+						>
+							<input
+								class="checkbox margin-right-sm cursor-p b-1 br-xs"
+								type="checkbox"
+								name="save"
+								required
+							/>
+							<span>Save this information for next time</span>
+						</label>
+					</section>
+					<div class="overflow-hidden">
+						<button
+							class="button button--large outline-none text-md bg-color-orange color-white b-none br-sm d-block margin-y-xs float-r"
+							type="submit"
+						>
+							<span>Continue</span>
+						</button>
+					</div>
+				</form>
+				<aside class="aside bg-color-grey-5 br-sm">
+					<section class="checkout">
+						<div class="checkout__item">
+							<img
+								class="checkout__image br-sm margin-right-md"
+								src="public/img/photo1.png"
+								alt="checkout item"
+							/>
+							<div class="checkout__details">
+								<div>
+									<h3 class="checkout__title color-black">
+										Vintage Backbag
+									</h3>
+									<div class="checkout__price">
+										<p
+											class="d-in text-md color-orange margin-right-sm"
+										>
+											$54.99
+										</p>
+										<p
+											class="d-in text-xs color-black td-lt"
+										>
+											$94.99
+										</p>
+									</div>
+								</div>
+								<div class="checkout__quantity p-relative">
+									<button
+										class="button button--small button--remove outline-color-orange p-absolute b-none br-xs bg-color-grey-4 color-grey-3"
+										type="button"
+									>
+										<i class="checkout__icon material-icons"
+											>remove</i
+										>
+									</button>
+									<input
+										class="input f-size-16 t-align-center b-1 br-sm custom-input-spacing bg-color-inherit outline-none w-100"
+										type="text"
+										value="1"
+									/>
+									<button
+										class="button button--small button--add outline-color-orange p-absolute b-none br-xs bg-color-grey-4 color-grey-3"
+										type="button"
+									>
+										<i class="checkout__icon material-icons"
+											>add</i
+										>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="checkout__item">
+							<img
+								class="checkout__image br-sm margin-right-md"
+								src="public/img/photo2.png"
+								alt="checkout item"
+							/>
+							<div class="checkout__details">
+								<div>
+									<h3 class="checkout__title color-black">
+										Levi Shoes
+									</h3>
+									<div class="checkout__price">
+										<p
+											class="d-in text-md color-orange margin-right-sm"
+										>
+											$79.99
+										</p>
+										<p
+											class="d-in text-xs color-black td-lt"
+										>
+											$124.99
+										</p>
+									</div>
+								</div>
+								<div class="checkout__quantity p-relative">
+									<button
+										class="button button--small button--remove outline-color-orange p-absolute b-none br-xs bg-color-grey-4 color-grey-3"
+										type="button"
+									>
+										<i class="checkout__icon material-icons"
+											>remove</i
+										>
+									</button>
+									<input
+										class="input f-size-16 t-align-center b-1 br-sm custom-input-spacing bg-color-inherit outline-none w-100"
+										type="text"
+										value="1"
+									/>
+									<button
+										class="button button--small button--add outline-color-orange p-absolute b-none br-xs bg-color-grey-4 color-grey-3"
+										type="button"
+									>
+										<i class="checkout__icon material-icons"
+											>add</i
+										>
+									</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="shipping">
+						<div class="d-flex d-justify-sb">
+							<p class="color-grey-1 text-lg">Shipping</p>
+							<p class="color-grey-1 text-lg">$19</p>
+						</div>
+						<div class="d-flex d-justify-sb">
+							<p class="color-grey-1 text-lg">Total</p>
+							<p class="color-grey-1 text-lg margin-bottom-none">
+								$148.98
+							</p>
+						</div>
+					</section>
+				</aside>
+			</main>
+			<footer class="footer">
+				<p class="color-grey-6">
+					<a
+						class="td-none color-grey-6"
+						href="https://github.com/django-json/"
+						>django-json</a
+					>
+					<span>@</span>
+					<a
+						class="td-none color-grey-6"
+						href="https://devchallenges.io/"
+						>DevChallenges.io</a
+					>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
