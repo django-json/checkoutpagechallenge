@@ -1,6 +1,6 @@
 html {
 	box-sizing: border-box;
-	min-width: 350px;
+	min-width: 320px;
 }
 
 *, *:before, *:after {
@@ -340,7 +340,7 @@ body {
 		order: 2;
 		margin-right: 0;
 		width: 100%;
-		min-width: 320px;
+		min-width: 310px;
 	}
 
 	.aside {
